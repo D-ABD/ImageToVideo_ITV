@@ -1,0 +1,3 @@
+ajouter la possibilité de creer juste de l'audio avec la voix clonée afin de pouvoir soit le telecharger ou l'ajouter diectement à une coach_shiba_video
+Ajouter previsualisation de l'image ou pdf que j'Importe
+Une file de tâches améliorerait le confort si plusieurs rendus doivent tourner en même temps,

@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.sqlite3
+media/*
+!media/.gitkeep
+output/*
+!output/.gitkeep
+staticfiles/

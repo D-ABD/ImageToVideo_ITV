@@ -1,0 +1,9 @@
+# Compatible set for Python 3.11, including Intel Macs that top out at PyTorch 2.2.2.
+torch==2.2.2
+torchaudio==2.2.2
+numpy==1.26.4
+llvmlite==0.45.1
+numba==0.62.1
+transformers==4.49.0
+coqui-tts==0.22.1
+whisperx==3.3.1

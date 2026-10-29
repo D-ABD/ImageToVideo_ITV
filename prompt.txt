@@ -1,0 +1,43 @@
+Crée une application web simple, en français, pour transformer une image ou un PDF en vidéo avec une voix clonée, des sous-titres et un zoom lent.
+L’objectif est une interface facile à utiliser, avec uniquement les fonctionnalités essentielles suivantes.
+1. Importer le contenu
+- Ajouter une image JPG ou PNG, ou un fichier PDF.
+- Pour un PDF, convertir chaque page en une scène.
+- Afficher un aperçu des scènes et permettre de les réordonner ou de les supprimer.
+2. Ajouter le texte
+- Saisir le texte à faire lire pour chaque scène.
+- Permettre de modifier ce texte avant la génération.
+- Adapter automatiquement la durée de chaque scène à sa narration.
+3. Choisir une voix clonée
+- Importer un échantillon vocal WAV ou MP3, ou enregistrer directement sa voix avec le microphone.
+- Écouter l’échantillon avant de le sauvegarder.
+- Donner un nom à la voix et la réutiliser dans les prochaines vidéos.
+- Demander confirmation que l’utilisateur possède l’autorisation d’utiliser cette voix.
+- Générer la narration en français à partir du texte et de la voix choisie.
+4. Afficher les sous-titres
+- Générer les sous-titres à partir du texte lu et les synchroniser avec la narration.
+- Afficher les phrases progressivement, sans afficher tout le texte en même temps.
+- Proposer un bouton pour activer ou désactiver les sous-titres.
+- Utiliser un style lisible : texte blanc, fond sombre semi-transparent, position en bas avec des marges.
+5. Ajouter un mouvement simple
+- Proposer trois options par scène : image fixe, zoom avant lent ou zoom arrière lent.
+- Garder un mouvement doux et discret pendant toute la scène.
+- Conserver les proportions de l’image.
+- Ne pas animer les visages, les lèvres ou les personnages.
+6. Générer et télécharger
+- Assembler les scènes et leur narration dans une vidéo MP4.
+- Proposer les formats vertical 9:16 et horizontal 16:9.
+- Permettre de prévisualiser la vidéo et de la télécharger.
+- Afficher clairement l’état du traitement et les éventuelles erreurs.
+- Conserver les projets pour pouvoir les rouvrir et les modifier.
+Interface souhaitée
+Un écran principal organisé dans cet ordre :
+Importer → Écrire le texte → Choisir la voix → Régler les sous-titres et le zoom → Générer la vidéo.
+Afficher l’aperçu de la scène sélectionnée à côté des réglages. Utiliser des boutons clairs et peu d’options. Prévoir une petite bibliothèque de voix enregistrées et une liste des projets.
+Contraintes techniques
+- Utiliser Django, SQLite, des templates HTML et du JavaScript simple.
+- Utiliser XTTS v2 pour la synthèse avec clonage vocal, FFmpeg pour la vidéo et un outil d’alignement pour synchroniser réellement les sous-titres avec l’audio.
+- Stocker les fichiers localement.
+- Réutiliser les narrations déjà générées lorsque le texte et la voix ne changent pas.
+- Fournir une application fonctionnelle, avec les instructions d’installation et de lancement.
+Garder le périmètre minimal : pas de musique, pas de transitions complexes, pas d’avatars parlants, pas de comptes utilisateurs et pas de services cloud obligatoires.
